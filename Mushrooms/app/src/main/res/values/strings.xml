@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Mushrooms</string>
+    <string name="main_picture_desc">Белый гриб</string>
+    <string name="main_title">Mushrooms Identifyer</string>
+    <string name="tool_bar_name">Mushrooms</string>
+    <string name="but_history_text">History</string>
+    <string name="but_start_text">Start</string>
+    <string name="action_back">Back</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_home">Home</string>
+    <string name="quest_prompt">Введите в поля ниже данные найденного гриба:</string>
+    <string name="lbl_top_color">Цвет шляпы:</string>
+    <string name="lbl_grow_place">Место произрастания:</string>
+    <string name="lbl_found">Дата находки:</string>
+    <string name="lbl_round_kind">Цвет оборота шляпы:</string>
+    <string name="lbl_round_color">Цвет оборота шляпки:</string>
+    <string name="lbl_slice">Мякоть на срезе:</string>
+    <string name="lbl_match">Подходит: 12 грибов</string>
+    <string name="lbl_screen1">1/2</string>
+    <string name="lbl_screen2">2/2</string>
+    <string name="lbl_next">Next</string>
+    <string name="lbl_hat_width">Ширина шляпки, см:</string>
+    <string name="lbl_hat_spec">Особенности:</string>
+    <string name="lbl_leg_color">Цвет ножки:</string>
+    <string name="lbl_leg_height">Высота ножки, см:</string>
+    <string name="lbl_leg_diameter">Диаметр ножки, см:</string>
+    <string name="lbl_leg_ring">Кольцо на ножке:</string>
+    <string name="lbl_ready">Identify</string>
+    <string name="lbl_results">Results:</string>
+    <string name="but_clear">Clear</string>
+    <string name="text_white_mushroom">Белый гриб</string>
+    <string name="text_podberez">Подберезовик обыкновенный</string>
+    <string name="text_maslenok">Масленок обыкновенный</string>
+    <string name="text_mokruha">Мокруха еловая</string>
+    <string name="text_polski_grib">Польский гриб</string>
+    <string name="but_show_more">Show more</string>
+    <string name="lbl_description">Description:</string>
+    <string name="history_text1">17.08.2019 14:50\nБелый гриб\nКоричневый, смешанный лес, август, губчатый, белый</string>
+    <string name="history_text2">10.08.2019 11:00\nМухомор красный\nКрасный, смешанный лес, август, пластинчатый, белый</string>
+    <string name="show_result">Show result</string>
+    <string name="correct">Correct</string>
+
+    <string-array name="hat_color_array">
+        <item>Бурый, коричневый</item>
+        <item>Красный</item>
+        <item>Желтый</item>
+        <item>Серый</item>
+    </string-array>
+    <string-array name="grow_place_array">
+        <item>Лиственный лес</item>
+        <item>Хвойный лес</item>
+        <item>Смешанный лес</item>
+    </string-array>
+    <string-array name="found_array">
+        <item>Сегодня</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+    </string-array>
+    <string-array name="round_kind_array">
+        <item>Губчатый</item>
+        <item>Пластинчатый</item>
+        <item>Гладкий</item>
+        <item>Складчатый</item>
+        <item>Шиповатый</item>
+    </string-array>
+    <string-array name="round_color_array">
+        <item>Белый</item>
+        <item>Желтый</item>
+        <item>Серый</item>
+    </string-array>
+    <string-array name="slice_array">
+        <item>Белая, без выделений</item>
+        <item>Желтая</item>
+        <item>Серая</item>
+    </string-array>
+    <string-array name="spec_array">
+        <item>Нет</item>
+        <item>Крапинки</item>
+        <item>Светлее к краям</item>
+    </string-array>
+    <string-array name="leg_color_array">
+        <item>Белый</item>
+        <item>Желтый</item>
+        <item>Серый</item>
+    </string-array>
+    <string-array name="leg_ring_array">
+        <item>Отсутствует</item>
+        <item>Ровное</item>
+        <item>Волнистое</item>
+    </string-array>
+</resources>
