@@ -16,7 +16,7 @@ class DetailsActivity : MushroomsActivityBase() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details)
         setupActionBar()
-
+        if(savedInstanceState == null) return
         val details = intent.extras.getParcelable<MushroomDetails>("details")
         if (details != null) {
             val mushroomTitle = findViewById<TextView>(R.id.title)
