@@ -19,5 +19,10 @@ class MainActivity : MushroomsActivityBase() {
         but_history.setOnClickListener {
             goHistory()
         }
+
+        popular_mushrooms.setOnClickListener {
+            val intent = Intent(this, PopularActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

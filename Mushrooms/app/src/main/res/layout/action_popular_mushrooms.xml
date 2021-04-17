@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D5A3A3">
+
+    <include
+            layout="@layout/action_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <TextView
+            android:text="Popular Mushrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textSize="30sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:layout_marginTop="72dp"
+            app:layout_constraintStart_toEndOf="@+id/belyiy_grib"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintEnd_toEndOf="@+id/belyiy_grib"
+            app:layout_constraintBottom_toTopOf="@+id/belyiy_grib"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/boletus"
+            android:background="@drawable/boletus_badius_02"
+            android:layout_marginTop="144dp"
+            app:layout_constraintStart_toEndOf="@+id/belyiy_grib"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="55dp"
+            app:layout_constraintBottom_toTopOf="@+id/killer"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="40dp" />
+
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/belyiy_grib"
+            android:background="@drawable/belyiy_grib_elovyiy"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintEnd_toStartOf="@+id/boletus"
+            android:layout_marginBottom="54dp"
+            app:layout_constraintBottom_toTopOf="@+id/mokruha"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="39dp"
+            android:layout_marginEnd="7dp" />
+
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/mokruha"
+            android:background="@drawable/bs_mokruha_"
+            app:layout_constraintTop_toBottomOf="@+id/belyiy_grib"
+            app:layout_constraintEnd_toStartOf="@+id/killer"
+            android:layout_marginBottom="39dp"
+            app:layout_constraintBottom_toTopOf="@+id/glutinosus"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="39dp"
+            android:layout_marginEnd="8dp" />
+
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/killer"
+            android:background="@drawable/fli_killer"
+            app:layout_constraintTop_toBottomOf="@+id/boletus"
+            app:layout_constraintStart_toEndOf="@+id/mokruha"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="234dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="44dp" />
+
+    <Button
+            android:layout_width="252dp"
+            android:layout_height="0dp"
+            android:id="@+id/glutinosus"
+            android:background="@drawable/gomphidius_glutinosus_01"
+            app:layout_constraintTop_toBottomOf="@+id/mokruha"
+            app:layout_constraintStart_toEndOf="@+id/mokruha"
+            android:layout_marginBottom="49dp"
+            app:layout_constraintEnd_toEndOf="@+id/mokruha"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

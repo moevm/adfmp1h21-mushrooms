@@ -26,6 +26,13 @@
         </activity>
         <activity android:name=".ResultsActivity">
         </activity>
+        <activity android:name=".PopularActivity">
+        </activity>
+        <activity android:name=".Details1"></activity>
+        <activity android:name=".Details2"></activity>
+        <activity android:name=".Details3"></activity>
+        <activity android:name=".Details4"></activity>
+        <activity android:name=".Details5"></activity>
     </application>
 
 </manifest>
