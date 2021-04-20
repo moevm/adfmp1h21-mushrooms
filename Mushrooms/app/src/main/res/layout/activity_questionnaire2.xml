@@ -7,49 +7,82 @@
         android:layout_height="match_parent"
         tools:context=".Questionnaire2">
 
-    <include layout="@layout/action_bar"/>
+    <include
+            layout="@layout/action_bar"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
 
     <LinearLayout
             android:orientation="vertical"
-            android:layout_width="395dp"
-            android:layout_height="659dp"
+            android:layout_width="315dp"
+            android:layout_height="525dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
             android:layout_marginTop="?attr/actionBarSize"
-            android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="8dp">
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
         <TextView
                 android:text="@string/quest_prompt"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/text_prompt"
-                android:textSize="24sp" android:textStyle="bold"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/text_prompt"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
             <TextView
                     android:text="@string/lbl_hat_width"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/lbl_hat_width"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_hat_width"
                     android:layout_weight="4"
-                    android:textSize="24sp" android:layout_marginTop="6dp"/>
+                    android:textSize="24sp"
+                    android:layout_marginTop="6dp" />
+
             <TextView
                     android:text="10"
                     android:layout_width="72dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/val_hat_width"
-                    android:gravity="right" android:layout_weight="1"
-                    android:textSize="24sp" android:layout_marginTop="6dp" />
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:textSize="24sp"
+                    android:layout_marginTop="6dp" />
         </LinearLayout>
+
         <SeekBar
                 android:layout_width="match_parent"
-                android:layout_height="32dp" android:id="@+id/sb_hat_width" android:max="25" android:progress="10"
-                android:thumbTint="@color/MushroomsGreen" android:progressTint="@color/MushroomsGreen"/>
+                android:layout_height="32dp"
+                android:id="@+id/sb_hat_width"
+                android:max="25"
+                android:progress="10"
+                android:thumbTint="@color/MushroomsGreen"
+                android:progressTint="@color/MushroomsGreen" />
+
         <TextView
                 android:text="Плотность ножки"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/lbl_hat_spec"
-                android:textSize="24sp" android:layout_marginTop="6dp"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/lbl_hat_spec"
+                android:textSize="24sp"
+                android:layout_marginTop="6dp" />
 
         <Spinner
                 android:id="@+id/ed_hat_spec"
@@ -59,11 +92,14 @@
                 android:spinnerMode="dropdown"
                 android:layout_margin="0dp"
                 android:popupBackground="@drawable/green_rounded_corners" />
+
         <TextView
                 android:text="@string/lbl_leg_color"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/lbl_leg_color"
-                android:textSize="24sp" android:layout_marginTop="6dp"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/lbl_leg_color"
+                android:textSize="24sp"
+                android:layout_marginTop="6dp" />
 
         <Spinner
                 android:id="@+id/ed_leg_color"
@@ -73,50 +109,76 @@
                 android:spinnerMode="dropdown"
                 android:layout_margin="0dp"
                 android:popupBackground="@drawable/green_rounded_corners" />
+
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
             <TextView
                     android:text="@string/lbl_leg_height"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/lbl_leg_height"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_leg_height"
                     android:layout_weight="4"
-                    android:textSize="24sp" android:layout_marginTop="6dp"/>
+                    android:textSize="24sp"
+                    android:layout_marginTop="6dp" />
+
             <TextView
                     android:text="8"
                     android:layout_width="72dp"
-                    android:layout_height="wrap_content" android:id="@+id/val_leg_height"
-                    android:gravity="right" android:layout_weight="1"
-                    android:textSize="24sp" android:layout_marginTop="6dp"
-                    android:singleLine="false"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/val_leg_height"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:textSize="24sp"
+                    android:layout_marginTop="6dp"
+                    android:singleLine="false" />
         </LinearLayout>
+
         <SeekBar
                 android:layout_width="match_parent"
-                android:layout_height="32dp" android:id="@+id/sb_leg_height" android:max="25" android:progress="8"
-                android:thumbTint="@color/MushroomsGreen" android:progressTint="@color/MushroomsGreen"/>
+                android:layout_height="32dp"
+                android:id="@+id/sb_leg_height"
+                android:max="25"
+                android:progress="8"
+                android:thumbTint="@color/MushroomsGreen"
+                android:progressTint="@color/MushroomsGreen" />
+
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
             <TextView
                     android:text="@string/lbl_leg_diameter"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/lbl_leg_diameter"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_leg_diameter"
                     android:layout_weight="4"
-                    android:textSize="24sp" android:layout_marginTop="6dp"/>
+                    android:textSize="24sp"
+                    android:layout_marginTop="6dp" />
+
             <TextView
                     android:text="3"
                     android:layout_width="72dp"
-                    android:layout_height="wrap_content" android:id="@+id/val_leg_diameter"
-                    android:gravity="right" android:layout_weight="1"
-                    android:textSize="24sp" android:layout_marginTop="6dp"
-                    android:singleLine="true"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/val_leg_diameter"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:textSize="24sp"
+                    android:layout_marginTop="6dp"
+                    android:singleLine="true" />
         </LinearLayout>
+
         <SeekBar
                 android:layout_width="match_parent"
-                android:layout_height="32dp" android:id="@+id/sb_leg_diameter" android:max="10" android:progress="3"
-                android:thumbTint="@color/MushroomsGreen" android:progressTint="@color/MushroomsGreen"/>
+                android:layout_height="32dp"
+                android:id="@+id/sb_leg_diameter"
+                android:max="10"
+                android:progress="3"
+                android:thumbTint="@color/MushroomsGreen"
+                android:progressTint="@color/MushroomsGreen" />
 
         <LinearLayout
                 android:orientation="horizontal"
@@ -137,6 +199,11 @@
                     android:layout_marginLeft="32dp"
                     android:textAllCaps="false" />
         </LinearLayout>
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"/>
     </LinearLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

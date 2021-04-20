@@ -9,7 +9,12 @@
     <include
             layout="@layout/action_bar"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:id="@+id/include"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="parent" />
 
     <TextView
             android:text="Popular Mushrooms"
@@ -20,14 +25,15 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:layout_marginTop="72dp"
             app:layout_constraintStart_toEndOf="@+id/belyiy_grib"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="171dp"
             app:layout_constraintEnd_toEndOf="@+id/belyiy_grib"
-            app:layout_constraintBottom_toTopOf="@+id/belyiy_grib"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/killer"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.512" />
 
     <Button
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="111dp"
+            android:layout_height="87dp"
             android:id="@+id/boletus"
             android:background="@drawable/boletus_badius_02"
             android:layout_marginTop="144dp"
@@ -39,8 +45,8 @@
             android:layout_marginEnd="40dp" />
 
     <Button
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="114dp"
+            android:layout_height="94dp"
             android:id="@+id/belyiy_grib"
             android:background="@drawable/belyiy_grib_elovyiy"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
@@ -65,20 +71,20 @@
             android:layout_marginEnd="8dp" />
 
     <Button
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="111dp"
+            android:layout_height="79dp"
             android:id="@+id/killer"
             android:background="@drawable/fli_killer"
-            app:layout_constraintTop_toBottomOf="@+id/boletus"
             app:layout_constraintStart_toEndOf="@+id/mokruha"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginBottom="234dp"
+            android:layout_marginEnd="44dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginEnd="44dp" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            android:layout_marginBottom="171dp" />
 
     <Button
-            android:layout_width="252dp"
-            android:layout_height="0dp"
+            android:layout_width="215dp"
+            android:layout_height="96dp"
             android:id="@+id/glutinosus"
             android:background="@drawable/gomphidius_glutinosus_01"
             app:layout_constraintTop_toBottomOf="@+id/mokruha"

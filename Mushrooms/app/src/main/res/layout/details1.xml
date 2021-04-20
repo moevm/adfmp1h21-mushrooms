@@ -9,15 +9,24 @@
 
     <include layout="@layout/action_bar"/>
 
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
     <LinearLayout
             android:orientation="vertical"
-            android:layout_width="395dp"
-            android:layout_height="659dp"
+            android:layout_width="311dp"
+            android:layout_height="524dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
             android:layout_marginTop="?attr/actionBarSize"
-            android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="8dp">
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
 
         <TextView
                 android:text="Белый Гриб"
@@ -49,15 +58,21 @@
         <TextView
                 android:text="@string/lbl_description"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/subtitle"
-                android:textSize="30sp" android:textStyle="bold"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/subtitle"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="368dp"
                 android:id="@+id/descriptionText"
                 android:text="@string/details1" />
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"/>
 
     </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

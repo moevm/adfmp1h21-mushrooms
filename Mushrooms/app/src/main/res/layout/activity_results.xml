@@ -6,82 +6,123 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ResultsActivity">
-
     <include layout="@layout/action_bar"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
 
     <LinearLayout
             android:orientation="vertical"
-            android:layout_width="395dp"
-            android:layout_height="659dp"
+            android:layout_width="313dp"
+            android:layout_height="530dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
             android:layout_marginTop="?attr/actionBarSize"
-            android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="8dp">
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
         <TextView
                 android:text="@string/lbl_results"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/text_results"
-                android:textSize="30sp" android:textStyle="bold"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/text_results"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
         <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/card_view_results"
-        >
+                android:id="@+id/card_view_results">
+
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
                         android:background="@drawable/belyiy_grib_elovyiy"
-                        android:text="@string/text_white_mushroom" android:textColor="@android:color/white"
+                        android:text="@string/text_white_mushroom"
+                        android:textColor="@android:color/white"
                         android:textSize="24dp"
-                        android:textStyle="bold" android:gravity="bottom|right" android:padding="12dp"
-                        android:id="@+id/result1"/>
+                        android:textStyle="bold"
+                        android:gravity="bottom|right"
+                        android:padding="12dp"
+                        android:id="@+id/result1" />
+
                 <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/result_23">
+                        android:layout_height="wrap_content"
+                        android:id="@+id/result_23">
 
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="160dp"
                             android:background="@drawable/suillus_luteus_03"
-                            android:text="@string/text_maslenok" android:textColor="@android:color/white"
-                            android:textSize="18dp" android:layout_weight="1"
-                            android:textStyle="bold" android:gravity="bottom|right" android:padding="12dp"
-                            android:id="@+id/result3" android:layout_marginTop="4dp" android:layout_marginLeft="2dp"/>
+                            android:text="@string/text_maslenok"
+                            android:textColor="@android:color/white"
+                            android:textSize="18dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:gravity="bottom|right"
+                            android:padding="12dp"
+                            android:id="@+id/result3"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="2dp" />
                 </LinearLayout>
+
                 <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/result45">
+                        android:layout_height="wrap_content"
+                        android:id="@+id/result45">
 
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="160dp"
                             android:background="@drawable/bs_mokruha_"
-                            android:text="@string/text_mokruha" android:textColor="@android:color/white"
-                            android:textSize="18dp" android:layout_weight="1"
-                            android:textStyle="bold" android:gravity="bottom|right" android:padding="12dp"
-                            android:id="@+id/result5" android:layout_marginTop="4dp" android:layout_marginLeft="2dp"/>
+                            android:text="@string/text_mokruha"
+                            android:textColor="@android:color/white"
+                            android:textSize="18dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:gravity="bottom|right"
+                            android:padding="12dp"
+                            android:id="@+id/result5"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="2dp" />
 
                 </LinearLayout>
 
                 <Button
                         android:text="@string/but_show_more"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/but_show_more"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/but_show_more"
                         android:layout_marginTop="8dp"
                         android:background="@drawable/green_rounded_corners"
-                        android:textColor="@android:color/white" android:textSize="24dp" android:textStyle="bold"
-                        android:textAllCaps="false" android:paddingLeft="24dp" android:paddingRight="24dp"
-                        android:layout_gravity="center"/>
+                        android:textColor="@android:color/white"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:layout_gravity="center" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"/>
     </LinearLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

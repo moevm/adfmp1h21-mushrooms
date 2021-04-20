@@ -7,151 +7,167 @@
         tools:context=".Questionnaire"
         android:background="#FAFAFA">
 
-    <include layout="@layout/action_bar" />
+    <include
+            layout="@layout/action_bar"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="395dp"
-            android:layout_height="659dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
-            android:layout_marginTop="?attr/actionBarSize"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingTop="8dp">
-
-        <TextView
-                android:text="@string/quest_prompt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/text_prompt"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-        <TextView
-                android:text="@string/lbl_top_color"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lbl_top_color"
-                android:textSize="24sp"
-                android:layout_marginTop="6dp" />
-
-        <Spinner
-                android:id="@+id/ed_top_color"
-                android:layout_width="match_parent"
-                android:layout_height="32dp"
-                style="@style/spinner_style"
-                android:spinnerMode="dropdown"
-                android:layout_margin="0dp"
-                android:popupBackground="@drawable/green_rounded_corners" />
-
-        <TextView
-                android:text="@string/lbl_grow_place"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lbl_grow_place"
-                android:textSize="24sp"
-                android:layout_marginTop="6dp" />
-
-        <Spinner
-                android:id="@+id/ed_grow_place"
-                android:layout_width="match_parent"
-                android:layout_height="32dp"
-                style="@style/spinner_style"
-                android:spinnerMode="dropdown"
-                android:layout_margin="0dp"
-                android:popupBackground="@drawable/green_rounded_corners" />
-
-        <TextView
-                android:text="@string/lbl_found"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lbl_found"
-                android:textSize="24sp"
-                android:layout_marginTop="6dp" />
-
-        <Spinner
-                android:id="@+id/ed_found"
-                android:layout_width="match_parent"
-                android:layout_height="32dp"
-                style="@style/spinner_style"
-                android:spinnerMode="dropdown"
-                android:layout_margin="0dp"
-                android:popupBackground="@drawable/green_rounded_corners" />
-
-        <TextView
-                android:text="@string/lbl_round_kind"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lbl_round_kind"
-                android:textSize="24sp"
-                android:layout_marginTop="6dp" />
-
-        <Spinner
-                android:id="@+id/ed_round_kind"
-                android:layout_width="match_parent"
-                android:layout_height="32dp"
-                style="@style/spinner_style"
-                android:spinnerMode="dropdown"
-                android:layout_margin="0dp"
-                android:popupBackground="@drawable/green_rounded_corners" />
-
-        <TextView
-                android:text="@string/lbl_round_color"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lbl_round_color"
-                android:textSize="24sp"
-                android:layout_marginTop="6dp" />
-
-        <Spinner
-                android:id="@+id/ed_round_color"
-                android:layout_width="match_parent"
-                android:layout_height="32dp"
-                style="@style/spinner_style"
-                android:spinnerMode="dropdown"
-                android:layout_margin="0dp"
-                android:popupBackground="@drawable/green_rounded_corners" />
-
-        <TextView
-                android:text="@string/lbl_slice"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lbl_slice"
-                android:textSize="24sp"
-                android:layout_marginTop="6dp" />
-
-        <Spinner
-                android:id="@+id/ed_slice"
-                android:layout_width="match_parent"
-                android:layout_height="32dp"
-                style="@style/spinner_style"
-                android:spinnerMode="dropdown"
-                android:layout_margin="0dp"
-                android:popupBackground="@drawable/green_rounded_corners" />
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingTop="16dp">
+                android:orientation="vertical"
+                android:layout_width="317dp"
+                android:layout_height="280dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp">
 
-            <Button
-                    android:text="@string/lbl_next"
-                    android:layout_width="wrap_content"
+            <TextView
+                    android:text="@string/quest_prompt"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/but_next"
-                    android:layout_weight="1"
-                    android:background="@drawable/green_rounded_corners"
-                    android:textColor="@android:color/white"
-                    android:textStyle="bold"
+                    android:id="@+id/text_prompt"
                     android:textSize="24sp"
-                    android:layout_marginLeft="32dp"
-                    android:textAllCaps="false" />
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:text="@string/lbl_top_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_top_color"
+                    android:textSize="24sp"
+                    android:layout_marginTop="6dp" />
+
+            <Spinner
+                    android:id="@+id/ed_top_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    style="@style/spinner_style"
+                    android:spinnerMode="dropdown"
+                    android:layout_margin="0dp"
+                    android:popupBackground="@drawable/green_rounded_corners" />
+
+            <TextView
+                    android:text="@string/lbl_grow_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_grow_place"
+                    android:textSize="24sp"
+                    android:layout_marginTop="6dp" />
+
+            <Spinner
+                    android:id="@+id/ed_grow_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    style="@style/spinner_style"
+                    android:spinnerMode="dropdown"
+                    android:layout_margin="0dp"
+                    android:popupBackground="@drawable/green_rounded_corners" />
+
+            <TextView
+                    android:text="@string/lbl_found"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_found"
+                    android:textSize="24sp"
+                    android:layout_marginTop="6dp" />
+
+            <Spinner
+                    android:id="@+id/ed_found"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    style="@style/spinner_style"
+                    android:spinnerMode="dropdown"
+                    android:layout_margin="0dp"
+                    android:popupBackground="@drawable/green_rounded_corners" />
+
+            <TextView
+                    android:text="@string/lbl_round_kind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_round_kind"
+                    android:textSize="24sp"
+                    android:layout_marginTop="6dp" />
+
+            <Spinner
+                    android:id="@+id/ed_round_kind"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    style="@style/spinner_style"
+                    android:spinnerMode="dropdown"
+                    android:layout_margin="0dp"
+                    android:popupBackground="@drawable/green_rounded_corners" />
+
+            <TextView
+                    android:text="@string/lbl_round_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_round_color"
+                    android:textSize="24sp"
+                    android:layout_marginTop="6dp" />
+
+            <Spinner
+                    android:id="@+id/ed_round_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    style="@style/spinner_style"
+                    android:spinnerMode="dropdown"
+                    android:layout_margin="0dp"
+                    android:popupBackground="@drawable/green_rounded_corners" />
+
+            <TextView
+                    android:text="@string/lbl_slice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_slice"
+                    android:textSize="24sp"
+                    android:layout_marginTop="6dp" />
+
+            <Spinner
+                    android:id="@+id/ed_slice"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    style="@style/spinner_style"
+                    android:spinnerMode="dropdown"
+                    android:layout_margin="0dp"
+                    android:popupBackground="@drawable/green_rounded_corners" />
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp">
+
+                <Button
+                        android:text="@string/lbl_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/but_next"
+                        android:layout_weight="1"
+                        android:background="@drawable/green_rounded_corners"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="32dp"
+                        android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"/>
+
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
